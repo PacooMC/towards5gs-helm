@@ -22,28 +22,28 @@ global:
 #Global network parametes
   n4network:
     name: n4network
-    masterIf: eth0
+    masterIf: ens3
     subnetIP: 10.100.50.240
     cidr: 29
     gatewayIP: 10.100.50.246
     excludeIP: 10.100.50.246
   n3network:
     name: n3network
-    masterIf: eth0
+    masterIf: ens3
     subnetIP: 10.100.50.232
     cidr: 29
     gatewayIP: 10.100.50.238
     excludeIP: 10.100.50.238
   n6network:
     name: n6network
-    masterIf: eth1
-    subnetIP: 10.100.100.0
+    masterIf: ens8
+    subnetIP: 40.20.20.0
     cidr: 24
-    gatewayIP: 10.100.100.1
-    excludeIP: 10.100.100.254
+    gatewayIP: 40.20.20.1
+    excludeIP: 40.20.20.254
   n9network:
     name: n9network
-    masterIf: eth0
+    masterIf: ens3
     subnetIP: 10.100.50.224
     cidr: 29
     gatewayIP: 10.100.50.230
@@ -67,7 +67,7 @@ upf:
   n4if:  # PFCP
     ipAddress: 10.100.50.241
   n6if:  # DN
-    ipAddress: 10.100.100.12
+    ipAddress: 40.20.20.10
 
   podAnnotations: {}
     # additional annotations
@@ -112,7 +112,7 @@ upf:
 
     logger: # log output setting
       enable: true # true or false
-      level: info # how detailed to output, value: trace, debug, info, warn, error, fatal, panic
+      level: debug # how detailed to output, value: trace, debug, info, warn, error, fatal, panic
       reportCaller: false # enable the caller report or not, value: true or false
 
 # The followed values will be considered in the case of choosing "ulcl" architecture for the user plane
