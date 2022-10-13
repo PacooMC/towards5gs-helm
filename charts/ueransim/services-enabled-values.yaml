@@ -22,9 +22,3 @@ global:
         type: NodePort
   n2network:
     enabled: false
-
-
-
-
-
-
