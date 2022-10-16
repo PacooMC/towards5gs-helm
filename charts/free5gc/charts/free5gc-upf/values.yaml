@@ -13,7 +13,7 @@
 # Default values for free5gcUserPlane chart.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
+ 
 
 global:
   projectName: free5gc
@@ -30,10 +30,10 @@ global:
   n3network:
     name: n3network
     masterIf: ens3
-    subnetIP: 10.100.50.232
-    cidr: 29
-    gatewayIP: 10.100.50.238
-    excludeIP: 10.100.50.238
+    subnetIP: 20.20.20.0
+    cidr: 24
+    gatewayIP: 20.20.20.1
+    excludeIP: 20.20.20.1
   n6network:
     name: n6network
     masterIf: ens8
@@ -63,7 +63,7 @@ upf:
 
   # network paramters
   n3if:  # GTP-U
-    ipAddress: 10.100.50.233
+    ipAddress: 20.20.20.55
   n4if:  # PFCP
     ipAddress: 10.100.50.241
   n6if:  # DN

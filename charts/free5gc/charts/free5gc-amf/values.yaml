@@ -1,4 +1,4 @@
-#
+# 
 # Software Name : towards5gs-helm
 # SPDX-FileCopyrightText: Copyright (c) 2021 Orange
 # SPDX-License-Identifier: Apache-2.0
@@ -29,7 +29,7 @@ global:
     scheme: http
   amf:
     n2if:  # NGAP
-      ipAddress: 10.100.50.249
+      ipAddress: 20.20.20.100
     service:
       ngap:
         enabled: false
@@ -41,10 +41,10 @@ global:
   n2network:
     name: n2network
     masterIf: ens3
-    subnetIP: 10.100.50.248
-    cidr: 29
-    gatewayIP: 10.100.50.254
-    excludeIP: 10.100.50.254
+    subnetIP: 20.20.20.0
+    cidr: 24
+    gatewayIP: 20.20.20.1
+    excludeIP: 20.20.20.1
 
 initcontainers:
   curl:

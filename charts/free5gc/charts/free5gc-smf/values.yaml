@@ -174,7 +174,7 @@ smf:
             interfaces: # Interface list for this UPF
                   - interfaceType: N3 # the type of the interface (N3 or N9)
                     endpoints: # the IP address of this N3/N9 interface on this UPF
-                      - 10.100.50.233
+                      - 20.20.20.55
                     networkInstance: internet # Data Network Name (DNN)
         links: # the topology graph of userplane, A and B represent the two nodes of each link
           - A: gNB1
